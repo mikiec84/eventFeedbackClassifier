@@ -1,6 +1,6 @@
-#ATC-Chat Event Handler for PubNub BLOCKS
+#evenfeedBack PubNub fucntion
 
-# Pubnub block creation
+# Pubnub Function creation
 Step 1 : Login to the Pubnub account with the valid credentials.<br>
          ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/pubnubFucntionStep1.png)
 Step 2 : Click the "CREATE NEW APP" by giving a name to your APP.<br>
@@ -20,13 +20,13 @@ Step 7 : Give the Name of the Module, Channel to communicate with the Fucntion a
          code should execute(Before of After publish of the message).
          ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/pubnubFucntionStep6A.png)
 Step 8 : Click on the newly created Module.
-         ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/pubnubFucntionStep7.png)
+         ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/pubnubFucntionStep6.png)
 Step 9 : Copy the funtion code in the text area from [here](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/functions/main.js). 
-         ![alt-tag](https://github.com/shyampurk/atc-chat/blob/master/screenshots/pubnub_blocks/pb_atc_step9.png)
+         ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/pubnubFucntionStep7.png)
 
-Step 10 : Update line 16 & 17 to set variable 'username' and 'password' to the username and password obtained after creating the Weather Company Data Service.  Save the block.
+Step 10 : Update line 16 & 17 to set variable 'username' and 'password' to the username and password obtained after creating the Watson Natural Langauge Classifier.  Save the block.
 
 Step 11 : Click on the Start block button(top right) to start the block.
-         ![alt-tag](https://github.com/shyampurk/atc-chat/blob/master/screenshots/pubnub_blocks/pb_atc_step10.png)
+         ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/pubnubFucntionStep8.png)
 
-Your block code is now running
+Your funtion code is now running
