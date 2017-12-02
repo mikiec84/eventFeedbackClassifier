@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://cdn.pubnub.com/pubnub-3.16.5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <script src="index.js"></script>
+</head>
+<style type="text/css">
+
+
+#request{
+    height: 440px;
+    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden; 
+}
+#result{
+    height: 490px;
+    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden; 
+}
+#suggestionBox{
+    height:240px;
+    text-align: center; 
+    background-color: #d1edce;
+    font-family: Verdana;
+    font-style: normal;
+    font-size: 20px;
+
+}
+#SuggestionCount{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+}
+#complaintBox{
+    height:240px;
+    text-align: center; 
+    background-color: #edcece;
+    font-family: Verdana;
+    font-style: normal;
+    font-size: 20px;
+}
+#ComplaintCount{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+}
+.btn-primary {
+    color: black;
+    background-color: #ceeae9;
+    border-color: #357ebd; 
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: white;
+    background-color: teal;
+    border-color: #285e8e; 
+}
+</style>
+<body style="font-family:Verdana">
+    <div class="container" >
+        <div class="row " style="padding-top:20px;">    
+            <div class="col-md-8" >
+                <div class="panel panel-info" >
+                    <div class="panel-heading text-left" id="event-header">Enter the feedback to classify whether its a Suggestion or a Complaint 
+                    </div>
+                    <div class="panel-body" id="request">
+                        <ul class="media-list" id="message-list"></ul>
+                        Message : <p id ="uMessage"></p><br><p id= "responseClass"> </p>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="input-group">
+                            <input type="text" name="feedback" id="inputMessage" class="form-control" placeholder="Please enter your feedback here">
+                            <span class="input-group-btn">
+                                <input type="button" id="inputMessageSubmit" value="Submit"  class="btn btn-primary btn-block">
+                            </span>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" >
+                <div class="panel panel-primary" >
+                    <div class="panel-heading text-center">
+                       Feedback Classified As:
+                   </div>
+                   
+                   <div id = "result" class="panel-body">
+                    <div id="suggestionBox">
+                        <p> Suggestions :<br><label id = "SuggestionCount"> </label></p>
+                    </div>  
+                    <div id="complaintBox">
+                        <p> Complaint :<br><label id = "ComplaintCount"> </label></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
