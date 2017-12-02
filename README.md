@@ -43,6 +43,10 @@ You can also go the IBM Watson Natural Language Classifier's API Reference Page[
 
 Refer to this [README file](functions/README.md). Pay attention to Step 10 in block creation. This is where you will use the username and password from step 6 above.
 
+### Training Data
+
+The training data to feed the Watson Natural Lanuage Classifer has to be in a particular format which you will find [here](https://console.bluemix.net/docs/services/natural-language-classifier/using-your-data.html#using-your-own-data). And to get the training data for this sample download [this file](trainingData/nlcWatson.csv).
+
 ## Execution
 
 Assuming that both the Watson Natural Language Classifer and PubNub Fucntion are set up correctly and are running, make the following changes in the code.
