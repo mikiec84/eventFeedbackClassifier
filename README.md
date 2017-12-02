@@ -49,9 +49,9 @@ Assuming that both the Watson Natural Language Classifer and PubNub Fucntion are
 
 Step 1 - Clone this repository 
 
-Step 2 - Open [index.js](app/index.js) and edit line 9 & 10 to replace the PubNub publish and subscribe keys with the ones that you used for provisioning the Function.
+Step 2 - Open [index.js](frontEnd/index.js) and edit line 9 & 10 to replace the PubNub publish and subscribe keys with the ones that you used for provisioning the Function.
 
-Step 3 - Open [index.html](app/index.html) in multiple web browsers and enter your feedback for any event 
+Step 3 - Open [index.html](frontEnd/index.html) in multiple web browsers and enter your feedback for any event 
 
 Step 4 - Submit the feedback and check the classified result from the Natural Lanuage Classifier via your PubNub Functions. 
 
