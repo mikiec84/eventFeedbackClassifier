@@ -4,8 +4,8 @@ $(document).ready(function () {
 
 	var inputMessage = $('#inputMessage'),
 	inputMessageSubmit = $("#inputMessageSubmit"),
-	channel_input = 'ibm_classifier1_input',
-	channel_output = 'ibm_classifier1_output',
+	channel_input = 'ibm_classifier1_input',      // channel for pub_publish which will send the message
+	channel_output = 'ibm_classifier1_output',    // channel for pub_subscribe which will recieve the message
 	response = $('#responseClass'),
 	pub_key = 'pub-c-150a0a4f-5f17-4b45-a3ff-8f14b0672c58',
 	sub_key = 'sub-c-9c7f5d32-cd6b-11e7-8f18-c64264e19a04';
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
    pub_subscribe();
 
-	//pubnub function to post our message to the pubnub block
+	// Pubnub function to post our message to the pubnub block(function)
 
 	function pub_publish(pub_msg){
 		pubnub.publish({
