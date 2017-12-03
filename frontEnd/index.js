@@ -51,7 +51,6 @@ $(document).ready(function () {
    // This fucntion is to send message to the pubnub block using the pub_pblish function
 
    function send_message(){
-   	inputMessageSubmit.click(function (event) {
    		var feedback = {
 
    			"userMessage":inputMessage.val()
@@ -61,9 +60,7 @@ $(document).ready(function () {
 
    			inputMessage.val("");
    		}
-   	});
-
-
+  
    };
 
 	// This is after we call the call pub_suncribe function we differentiate between a Suggestion and a Complaint
