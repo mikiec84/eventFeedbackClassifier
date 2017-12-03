@@ -4,7 +4,8 @@ $(document).ready(function () {
 
 	var inputMessage = $('#inputMessage'),
 	inputMessageSubmit = $("#inputMessageSubmit"),
-	channel = 'ibm_classifier1_input',
+	channel_input = 'ibm_classifier1_input',
+	channel_output = 'ibm_classifier1_output',
 	response = $('#responseClass'),
 	pub_key = 'pub-c-150a0a4f-5f17-4b45-a3ff-8f14b0672c58',
 	sub_key = 'sub-c-9c7f5d32-cd6b-11e7-8f18-c64264e19a04';
@@ -21,7 +22,7 @@ $(document).ready(function () {
 
    function pub_subscribe(){
    	pubnub.subscribe({
-   		channel : channel,
+   		channel : channel_output,
    		message : function(m){
    			console.log(m);
    			message_listing(m);
@@ -39,7 +40,7 @@ $(document).ready(function () {
 
 	function pub_publish(pub_msg){
 		pubnub.publish({
-			channel : channel,
+			channel : channel_input,
 			message : pub_msg,
 			callback : function(m){
 				console.log(m);
