@@ -16,7 +16,7 @@ export default (request) => {
     var fetched_message_body = null;
     var database_value = null;
 
-	var pubchannel = "ibm_classifier1_input";// Your pubnub chanel
+	var pubchannel = "ibm_classifier1_output";// Your pubnub chanel for output 
 	
 	const query = require('codec/query_string');
 	var query_params = {
@@ -46,9 +46,6 @@ export default (request) => {
 	});	
 
 }
-
-
-
 
 
 function fetchUserFeedback(feedback){
@@ -86,7 +83,7 @@ function fetchUserFeedback(feedback){
 		
 	}
 
-	// make a request the message entered by the user 
+	// make a request to get the message entered by the user 
 	db.get(request.message.userMessage).then((database_value)=>{
 		console.log("FETCHED DATABASE VALUE",database_value);
 		
