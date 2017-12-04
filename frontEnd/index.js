@@ -12,6 +12,8 @@ $(document).ready(function () {
 
 	var sCount = 0;
 	var cCount = 0;
+	
+	var uFeedback = null; // we will store the feedback from the user in this variable
 
 	var pubnub = PUBNUB({
 		publish_key : pub_key,
@@ -56,6 +58,10 @@ $(document).ready(function () {
 
    			"userMessage":inputMessage.val()
    		}
+		
+		// Here we store the feedback entered by the user
+		uFeedback = feedback;
+		
    		if(inputMessage.val().length != 0){
    			pub_publish(feedback);
 
@@ -71,7 +77,6 @@ $(document).ready(function () {
 
 			document.getElementById('responseClass').innerHTML = m.feedbackClass;
 			sCount ++;
-			document.getElementById('uMessage').innerHTML = m.userMessage;
 			document.getElementById('SuggestionCount').innerHTML = sCount;
 
 			
@@ -81,7 +86,6 @@ $(document).ready(function () {
 
 			document.getElementById('responseClass').innerHTML = m.feedbackClass;
 			cCount ++;
-			document.getElementById('uMessage').innerHTML = m.userMessage;
 			document.getElementById('ComplaintCount').innerHTML = cCount;
 
 		}
@@ -89,7 +93,7 @@ $(document).ready(function () {
 
 			console.log("Invalid message");
 			console.log("Received message from block : ",m);
-			document.getElementById('uMessage').innerHTML = m.userMessage;
+			
 
 		}
 		
@@ -100,6 +104,7 @@ $(document).ready(function () {
     inputMessageSubmit.on( "click", function() {
 
     	send_message();
+	document.getElementById('uMessage').innerHTML = uFeedback.userMessage;// we fetch and display the feedback from the user
 
 
     });
