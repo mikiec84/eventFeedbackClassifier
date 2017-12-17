@@ -10,7 +10,7 @@ For this application scenario ( feedback about an event) we have created a small
 
 
  
- Follow the steps below to train the NLC service with the above training set
+## Follow the steps below to train the NLC service with the above training set
   
 Step 1 : Assuming that you have looged into your IBM Bluemix Developer Console Goto the Manage options on the left, 
          and down below click on the "Get Started Tutorial" button. It will redirect you to the documentation page.      
