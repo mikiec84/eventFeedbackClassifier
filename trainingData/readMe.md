@@ -12,24 +12,27 @@ For this application scenario ( feedback about an event) we have created a small
  
 ## Follow the steps below to train the NLC service with the above training set
   
-Step 1 : Assuming that you have looged into your IBM Bluemix Developer Console Goto the Manage options on the left, 
+Step 1 : Assuming that you have loged into your IBM Bluemix Developer Console, Goto the Manage options on the left, 
          and down below click on the "Get Started Tutorial" button. It will redirect you to the documentation page.      
         ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/watson_classifier/watsonAPIstep4.png)
 
 Step 2 : If you follow the process you can see how to form the url with the<br>
-        username and password and pass the your custom data for Classification.        
-        ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/watson_classifier/watsonAPIstep4A.png)
+        username and password and pass your custom data for Classification. 
+  <br>
+  <br>
+For this application scenario ( feedback about an event) we have created a small training set. The training data to feed the Watson Natural Lanuage Classifer has to be in a particular format which you will find [here](https://console.bluemix.net/docs/services/natural-language-classifier/using-your-data.html#using-your-own-data). 
+ ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/watson_classifier/watsonAPIstep4A.png)
         
-
-
 ### We will be using the CURL Commands to get our classifer up and running.
         
 Step 3: We will invoke the IBM Watson Natural Classifer API in our Terminal / Command Prompt.   ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/trainingClassifier/watsonAPIstep9.png)
 
 Step 4: In our next step we will authenticate and push our training set into our Classifier. Please insert your username and password correctly. And insert the path where your traing data csv is stored.  ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/trainingClassifier/watsonAPIstep10.png)
 
-Step 5: If your credentials i.e: Username and Password are correctly pasted then you will see the below response. Please make a note of this URL as we will be using in our PUBNUB fucntions ahead.  ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/trainingClassifier/watsonAPIstep11.png)
+Step 5: If your credentials i.e: Username and Password are correctly pasted then you will see the below response. Please make a note of this URL as we will be using this in our PUBNUB fucntions ahead.  ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/trainingClassifier/watsonAPIstep11.png)
 
-Step 6: If you look carefully in the above image the status of our classifer is "Training" . So we need to run command as shown in the image below to check whether our classifier is ready  ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/trainingClassifier/watsonAPIstep12.png)
+Step 6: If you look carefully in the above image the status of our classifer is "Training", this means that our Clssifier is processing the training data . So we need to run command as shown in the image below to check whether our classifier is ready  ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/trainingClassifier/watsonAPIstep12.png)
 
-Your Classifer is trained and ready to use. Have fun !
+If our Classifier is ready only then we will get a response like above. 
+<br>
+Your Classifer is now trained and ready to use. Have fun !
