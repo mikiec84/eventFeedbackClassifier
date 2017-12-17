@@ -1,6 +1,8 @@
-# eventFeedbackClassifier
+# Event Feedback Classifier
 
-This respository is a sample use case of how can one use the IBM watson's Natural Language Classifier to classify the feedback recieved after an event into Suggestion or Complaint using PubNub Functions.
+This respository contains a sample use case to train IBM Watson's Natural Language Classifier to identify the type of feedback received for an event. If you are an event organizer and have a feedback form for your attendees, then by using Watson Natural Language Classifier service, you can classify each of the feedback comments as either "Suggestion" or "Complain". 
+
+Follow along this guide to build a customer feedback analytics system using Watson Natural Language Classifier and PubNub Functions.
 
 ## Setup
 
