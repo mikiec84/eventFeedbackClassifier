@@ -14,7 +14,7 @@ Step 2 : If you follow the process you can see how to form the url with the<br>
 
 For this application scenarion ( feedback about an event) we have created a small training set. The training data to feed the Watson Natural Lanuage Classifer has to be in a particular format which you will find [here](https://console.bluemix.net/docs/services/natural-language-classifier/using-your-data.html#using-your-own-data). 
 
-You can access the training set for this demo here in [this file](trainingData/nlcWatson.csv).
+You can access the training set for this demo here in [this file](trainingData/train.csv).
 
 Follow the steps below to train the NLC service with the above training set.
 
