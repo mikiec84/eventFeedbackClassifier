@@ -14,14 +14,14 @@ For this application scenario ( feedback about an event) we have created a small
   
 Step 1 : Assuming that you have loged into your IBM Bluemix Developer Console, Goto the Manage options on the left, 
          and down below click on the "Get Started Tutorial" button. It will redirect you to the documentation page.      
-        ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/watson_classifier/watsonAPIstep4.png)
+        ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/trainingClassifier/watsonAPIstep4.png)
 
 Step 2 : If you follow the process you can see how to form the url with the<br>
         username and password and pass your custom data for Classification. 
   <br>
   <br>
 For this application scenario ( feedback about an event) we have created a small training set. The training data to feed the Watson Natural Lanuage Classifer has to be in a particular format which you will find [here](https://console.bluemix.net/docs/services/natural-language-classifier/using-your-data.html#using-your-own-data). 
- ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/watson_classifier/watsonAPIstep4A.png)
+ ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/trainingClassifier/watsonAPIstep4A.png)
         
 ### We will be using the CURL Commands to get our classifer up and running.
         
