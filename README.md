@@ -1,14 +1,27 @@
 # Event Feedback Classifier
 
-This respository contains a sample use case to train IBM Watson's Natural Language Classifier to identify the type of feedback received for an event. If you are an event organizer and have a feedback form for your attendees, then by using Watson Natural Language Classifier service, you can classify each of the feedback comments as either "Suggestion" or "Complain". 
+This respository contains a demo use case to train IBM Watson's Natural Language Classifier to identify the type of feedback received for an event. If you are an event organizer and have a feedback form for your attendees, then by using Watson Natural Language Classifier service, you can classify each of the feedback comments as either "Suggestion" or "Complain". 
 
 Follow along this guide to build a customer feedback analytics system using Watson Natural Language Classifier and PubNub Functions.
 
 ## Setup
 
-Setup IBM Watson Natural Language Classifier and PubNub Functions as follows
+To run this demo you will need to subscribe for IBM and PubNub account.
 
-### IBM Watson's Natural Language Classifiers API
+There are four steps involved in executing this demo
+
+1. Setup IBM Watson Natural Language Classifier (NLC) service
+
+2. Train NLC to differentiate the feedback comments
+
+3. Setup PubNub Functions to handle client requests
+
+4. Test the demo with client web application
+
+## Setup IBM Watson Natural Language Classifier Service
+
+The Watson Natural Language Classifier service is the brain behind this application. You can train it to identify different kinds of feedback comments and then it can build up its cognizance to differentiate live feedback data. But first you need to launch and configure the service.  
+
 Step 1 : Login to the IBM Watson's Developer Account with the valid credentials, and go to Catalog.
         ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/watson_classifier/watsonAPIstep1.png)
         
@@ -41,15 +54,26 @@ You can also go the IBM Watson Natural Language Classifier's API Reference Page[
 
 ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/watson_classifier/watsonAPIstep9.png)
 
-### PubNub Functions (Previously Called BLOCKS)
 
-Refer to this [README file](functions/README.md). Pay attention to Step 10 in block creation. This is where you will use the username and password from step 6 above.
+## Train NLC to differentiate the feedback comments
 
-### Training Data
+For this application scenarion ( feedback about an event) we have created a small training set. The training data to feed the Watson Natural Lanuage Classifer has to be in a particular format which you will find [here](https://console.bluemix.net/docs/services/natural-language-classifier/using-your-data.html#using-your-own-data). 
 
-The training data to feed the Watson Natural Lanuage Classifer has to be in a particular format which you will find [here](https://console.bluemix.net/docs/services/natural-language-classifier/using-your-data.html#using-your-own-data). And to get the training data for this sample download [this file](trainingData/nlcWatson.csv).
+You can access the training set for this demo here in [this file](trainingData/nlcWatson.csv).
 
-## Execution
+Follow the steps below to train the NLC service with the above training set.
+
+
+## Setup PubNub Functions to handle client requests
+
+The PubNub Functions is a microService framework that can be deployed in minutes. It is part of the [PubNub Data Stream Network](http://www.pubnub.com). It orchestrates between the user requests and calls to the NLC service to return the feedback classification for every request.
+
+Refer to this [README file](functions/README.md) to configure your PubNub Functions instance. 
+
+Note : Pay attention to Step 10 in block creation. This is where you will use the username and password that was generated in step 6 under section "Setup IBM Watson Natural Language Classifier Service" above.
+
+
+## Test the demo with client web application
 
 Assuming that both the Watson Natural Language Classifer and PubNub Fucntion are set up correctly and are running, make the following changes in the code.
 
