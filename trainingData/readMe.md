@@ -3,8 +3,6 @@
  Please note that this is the direct conitnuation after STEP 6 from the main Read Me file [this](/README.md)
  <br>
  You can access the training set for this demo here in [this file](trainingData/train.csv).
- 
- <br>
  <br>
 For this application scenario ( feedback about an event) we have created a small training set. The training data to feed the Watson Natural Lanuage Classifer has to be in a particular format which you will find [here](https://console.bluemix.net/docs/services/natural-language-classifier/using-your-data.html#using-your-own-data). 
 
