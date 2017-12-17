@@ -24,7 +24,7 @@ Step 8 : Click on the newly created Module.
 Step 9 : Copy the funtion code in the text area from [here](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/functions/main.js). 
          ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/pubnub_functions/pubnubFunctionStep7.png)
 
-Step 10 : Update line 12 & 13 to set variable 'username' and 'password' to the username and password obtained after creating the Watson Natural Langauge Classifier.  Save the block.
+Step 10 : Update line 12 & 13 to set variable 'username' and 'password' to the username and password obtained after creating the Watson Natural Langauge Classifier. <br> Also dont forget to update the 'url' with url you got while configuring the Natural Language Classifer <br> Save the block.
 
 Step 11 : Click on the Start block button(top right) to start the block.
          ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/pubnub_functions/pubnubFunctionStep8.png)
