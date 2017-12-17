@@ -42,26 +42,10 @@ Step 5 : Goto the Created service page. Click on the Service Credentials Or Clic
 Step 6 : Make a note of the Username and password by clicking the view credentials link(Also make a note of the URL) 
         ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/watson_classifier/watsonAPIstep7.png)
 
-Step 7 : Goto the Manage options on the left, and down below click on the "Get Started Tutorial" button<br>
-        It will redirect you to the documentation page.      
-        ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/watson_classifier/watsonAPIstep4.png)
-
-Step 8 : If you follow the process you can see how to form the url with the<br>
-        username and password and pass the your custom data for Classification.        
-        ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/watson_classifier/watsonAPIstep4A.png)
-
-You can also go the IBM Watson Natural Language Classifier's API Reference Page[here](https://www.ibm.com/watson/developercloud/natural-language-classifier/api/v1/?curl#explorer) to try different methods for getting your classifier app running.
-
-![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/watson_classifier/watsonAPIstep9.png)
-
 
 ## Train NLC to differentiate the feedback comments
 
-For this application scenarion ( feedback about an event) we have created a small training set. The training data to feed the Watson Natural Lanuage Classifer has to be in a particular format which you will find [here](https://console.bluemix.net/docs/services/natural-language-classifier/using-your-data.html#using-your-own-data). 
-
-You can access the training set for this demo here in [this file](trainingData/train.csv).
-
-Follow the steps below to train the NLC service with the above training set.
+We have specially illustrated simple steps to make your Natural Language Classifier up and running. Just follow the steps [here](trainingData/readMe.md)
 
 
 ## Setup PubNub Functions to handle client requests
