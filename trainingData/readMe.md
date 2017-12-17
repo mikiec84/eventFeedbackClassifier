@@ -27,3 +27,5 @@ Step 4: In our next step we will authenticate and push our training set into our
 Step 5: If your credentials i.e: Username and Password are correctly pasted then you will see the below response. Please make a note of this URL as we will be using in our PUBNUB fucntions ahead.  ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/trainingClassifier/watsonAPIstep11.png)
 
 Step 6: If you look carefully in the above image the status of our classifer is "Training" . So we need to run command as shown in the image below to check whether our classifier is ready  ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/trainingClassifier/watsonAPIstep12.png)
+
+Your Classifer is trained and ready to use. Have fun !
