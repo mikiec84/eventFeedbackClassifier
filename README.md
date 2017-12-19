@@ -39,22 +39,22 @@ Step 5 : Goto the Created service page. Click on the Service Credentials Or Clic
         ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/watson_classifier/watsonAPIstep3B.png)
         
 
-Step 6 : Make a note of the Username and password by clicking the view credentials link(Also make a note of the URL) 
+Step 6 : Make a note of the Username and password by clicking the view credentials link (Also make a note of the URL) 
         ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/watson_classifier/watsonAPIstep7.png)
 
 
 ## Train NLC to differentiate the feedback comments
 
-We have specially illustrated simple steps to make your Natural Language Classifier up and running. Just follow the steps [here](trainingData/readMe.md)
+Before you can make use of the NLC service, it has to be trained to differentiate the feedback comments.  Follow the steps [here](trainingData/readMe.md) to train the NLC service for this application scenario.
 
 
 ## Setup PubNub Functions to handle client requests
 
-The PubNub Functions is a microService framework that can be deployed in minutes. It is part of the [PubNub Data Stream Network](http://www.pubnub.com). It orchestrates between the user requests and calls to the NLC service to return the feedback classification for every request.
+The PubNub Functions is a microservice framework that can be deployed in minutes. It is part of the [PubNub Data Stream Network](http://www.pubnub.com). It orchestrates between the user requests and calls to the NLC service to return the feedback classification for every request.
 
 Refer to this [README file](functions/README.md) to configure your PubNub Functions instance. 
 
-Note : Pay attention to Step 10 in block creation. This is where you will use the username and password that was generated in step 6 under section "Setup IBM Watson Natural Language Classifier Service" above.
+Note : Pay attention to Step 10 in block creation. This is where you will use the username, password and the URL that was generated in step 6 under section "Setup IBM Watson Natural Language Classifier Service" above.
 
 
 ## Test the demo with client web application
@@ -63,10 +63,10 @@ Assuming that both the Watson Natural Language Classifer and PubNub Fucntion are
 
 Step 1 - Clone this repository 
 
-Step 2 - Open [index.js](frontEnd/index.js) and edit line 9 & 10 to replace the PubNub publish and subscribe keys with the ones that you used for provisioning the Function.
+Step 2 - Open [index.js](frontEnd/index.js) and edit line 9 & 10 to replace the PubNub publish and subscribe keys with the ones that you used for provisioning the PubNub Functions.
 
-Step 3 - Open [index.html](frontEnd/index.html) in multiple web browsers and enter your feedback for any event 
+Step 3 - Open [index.html](frontEnd/index.html) in a web browsers and enter your feedback for any event 
 
-Step 4 - Submit the feedback and check the classified result from the Natural Lanuage Classifier via your PubNub Functions. 
+Step 4 - Submit the feedback and check the category returned from the Natural Lanuage Classifier (via your PubNub Functions). 
 
 
