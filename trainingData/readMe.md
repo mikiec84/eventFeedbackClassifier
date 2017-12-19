@@ -1,19 +1,16 @@
 # Training the Classifier
  
- Please note that this is the direct conitnuation after STEP 6 from the main Read Me file [this](/README.md)
+ The training set for this application can be accessed in [this file](trainingData/train.csv).
  <br>
   <br>
- You can access the training set for this demo here in [this file](trainingData/train.csv).
- <br>
-  <br>
-For this application scenario ( feedback about an event) we have created a small training set. The training data to feed the Watson Natural Lanuage Classifer has to be in a particular format which you will find [here](https://console.bluemix.net/docs/services/natural-language-classifier/using-your-data.html#using-your-own-data). 
+The training data for Watson Natural Lanuage Classifer has to be in a particular format which you will find [here](https://console.bluemix.net/docs/services/natural-language-classifier/using-your-data.html#using-your-own-data). 
 
 
  
 ## Follow the steps below to train the NLC service with the above training set
   
-Step 1 : Assuming that you have loged into your IBM Bluemix Developer Console, Goto the Manage options on the left, 
-         and down below click on the "Get Started Tutorial" button. It will redirect you to the documentation page.      
+Step 1 : Assuming that you have logged into your IBM Bluemix Developer Console, Goto the Manage options on the left, 
+         and down below, click on the "Get Started Tutorial" button. It will redirect you to the documentation page.      
         ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/trainingClassifier/watsonAPIstep4.png)
 
 Step 2 : If you follow the process you can see how to form the url with the<br>
