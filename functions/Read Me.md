@@ -18,7 +18,7 @@ Step 5 : Create a new Function by giving the name and description to the Fucntio
 Step 6 : Create the Module(previously called as Event Handler) by clicking CREATE button at the bottom.
          ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/pubnub_functions/pubnubFunctionStep6.png)
 Step 7 : Give the Name of the Module, Channel to communicate with the Fucntion and the option of when function <br>
-         code should execute(Before of After publish of the message). To know more about Before and After Publish(Fucntion Types) click [here](https://www.pubnub.com/docs/blocks/function-types)
+         code should execute(Before of After publish of the message).<br> To know which Event Type to select and why click [here](https://www.pubnub.com/docs/blocks/function-types)
          ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/pubnub_functions/pubnubFunctionStep6A.png)
 Step 8 : Click on the newly created Module.
          ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/pubnub_functions/pubnubFunctionStep6.png)
