@@ -1,6 +1,6 @@
 # Training the Classifier
  
- The training set for this application can be accessed in [this file](trainingData/train.csv).
+ The training set for this application can be accessed in [this file](train.csv).
  <br>
   <br>
 The training data for Watson Natural Lanuage Classifer has to be in a particular format which you will find [here](https://console.bluemix.net/docs/services/natural-language-classifier/using-your-data.html#using-your-own-data). 
