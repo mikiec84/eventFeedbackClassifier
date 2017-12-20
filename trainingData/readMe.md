@@ -7,24 +7,24 @@ The training data for Watson Natural Lanuage Classifer has to be in a particular
 
 
  
-## Follow the steps below to train the NLC service with the above training set
+## Follow the steps below to train the NLC service with the training set
   
 Step 1 : Assuming that you have logged into your IBM Bluemix Developer Console, Goto the Manage options on the left, 
-         and down below, click on the "Get Started Tutorial" button. It will redirect you to the documentation page.      
+         and down below, click on the "Getting Started Tutorial" button. It will redirect you to the documentation page.      
         ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/trainingClassifier/watsonAPIstep4.png)
 
-Step 2 : If you follow the process you can see how to form the url with the username and password and pass your custom data for Classification. 
+Step 2 : If you follow the process you can see how to form the url with the username and password and pass your custom data for Classification. Here is how the "Getting Started Tutorial" pages looks like.
    ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/trainingClassifier/watsonAPIstep4A.png)
         
 
-### Note : For the following steps, you will need the CURL command on command prompt. 
+### Note : For the following steps, you will need the CURL command on your OS terminal / command prompt. 
 
         
 Step 3: Invoke the IBM Watson Natural Classifer API in your Terminal / Command Prompt.   
 
 ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/trainingClassifier/watsonAPIstep9.png)
 
-Step 4: Next, invoke the command to pass the training set to the Classifier. Make sure to insert your username and password correctly and also insert the path where your traing data csv is stored. 
+Step 4: Next, invoke the command to pass the training set to the Classifier. Make sure to insert your username and password correctly and also insert the path where your traing data csv is stored (in your local file system). 
 
 ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/trainingClassifier/watsonAPIstep10.png)
 
