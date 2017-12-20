@@ -14,7 +14,7 @@ Step 3 : Click on the newly created APP.<br>
 Step 4 : Click on the Demo keyset and click on the Functions (on the left side).
          ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/pubnub_functions/pubnubFunctionStep4.png)
 Step 5 : Create a new Function by giving the name and description to the Fucntion.
-         ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/pubnub_functions/pubnubFunctionStep5.png)
+         ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/pubnub_functions/pubnubFunctionStep5A.png)
 Step 6 : Create the Module(previously called as Event Handler) by clicking CREATE button or GUIDE ME button(for step by step process) at the bottom.
          ![alt-tag](https://github.com/shyampurk/eventFeedbackClassifier/blob/master/screenshots/pubnub_functions/pubnubFunctionStep6.png)
 Step 7 : Give the Name of the Module, Channel to communicate with the Fucntion and the option of when function <br>
