@@ -1,4 +1,4 @@
-# evenfeedBack PubNub fucntion
+# Event FeedBack Classifier PubNub fucntion
 
 # Pubnub Function creation
 Step 1 : Login to the Pubnub account with the valid credentials.<br>
