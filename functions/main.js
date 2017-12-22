@@ -16,7 +16,7 @@ export default (request) => {
     var fetched_message_body = null;
     var database_value = null;
 
-	var pubchannel = "ibm_classifier1_output";// Your pubnub chanel for output 
+	var pubchannel = "ibm_classifier_output";// Your pubnub chanel for output 
 	
 	const query = require('codec/query_string');
 	var query_params = {
